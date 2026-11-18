@@ -1,0 +1,18 @@
+[package]
+name = "catalogue_converter"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "catalogue_converter"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+csv = "1"
+chrono = { version = "0.4", features = ["serde"] }
+parquet = { version = "53", features = ["arrow"] }
+arrow = { version = "53" }
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
