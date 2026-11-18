@@ -8,8 +8,6 @@ dist/
 build/
 .eggs/
 
-# uv
-uv.lock
 
 # NautilusTrader catalogue output (generated at runtime)
 catalogue/
