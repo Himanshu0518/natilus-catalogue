@@ -25,15 +25,27 @@ Each Parquet file contains all ticks for one instrument and one data type, sorte
 
 ---
 
-## How to run the Python converter
+## Setup
 
-From the **straddle project root**:
+This is a standalone repository with its own `uv` environment.
 
 ```powershell
-uv run python natilus-catalogue/convert_to_catalogue.py
+# Install uv if you don't have it
+pip install uv
+
+# From inside this folder — creates .venv and installs all dependencies
+uv sync
 ```
 
-This reads the two CSV files in `sample_data/`, builds NautilusTrader tick objects, writes them to `natilus-catalogue/catalogue/`, then reads them back and prints a sample to verify.
+## How to run the Python converter
+
+From **inside this folder**:
+
+```powershell
+uv run python convert_to_catalogue.py
+```
+
+This reads the two CSV files in `sample_data/`, builds NautilusTrader tick objects, writes them to `catalogue/`, then reads them back and prints a sample to verify.
 
 ---
 

@@ -1,8 +1,8 @@
 """
 Convert raw historical CSV data to a NautilusTrader ParquetDataCatalog.
 
-Usage (from the straddle project root):
-    uv run python natilus-catalogue/convert_to_catalogue.py
+Usage (from inside this folder):
+    uv run python convert_to_catalogue.py
 """
 
 import uuid
